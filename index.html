@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bedaran</title>
+    <link rel="icon" href="logo.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav>
+            <div class="option">
+                <a onclick="window.location.href='#sec-zero';" >Home</a>
+                <a onclick="window.location.href='#sec-one';">Physics</a>
+                <a onclick="window.location.href='#sec-two';">About</a>
+                
+
+            </div>
+        </nav>
+    </header>
+    
+
+ <section id="sec-zero" class="hero-sec">
+        <div class="content">
+            <div class="ss">
+                <div class="container-hero">
+                    <div class="img"></div>
+                    <h2>Bedar school!</h2>
+                    <h4>Physic website</h4>
+                    <h6>smooth design</h6>
+                    <p>Welcome to our website we wanna talk about physics and about physic man
+                        and physics rules 
+                    </p>
+                </div>
+                <div class="button-box">
+                    <button onclick="window.location.href='#sec-one';" class="button1">View Physics</button>
+                    <button onclick="window.location.href='#sec-two';" class="button2">Let's see</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+
+    <section id="sec-one" class="sec-second">
+        <div class="section-hero">
+            <h1>PHYSICS:</h1>
+            <p>
+                بنەڕەتیترین زانستی سروشتییە لە ڕووی زمانەوانییەوە لە وشەی یۆنانیوەرگیراوە کە مانای «سروشت» دەدات لە ڕووی زانستییەوە بریتییە لەو زانستەی کە لێکۆڵینەوە لە ماددە، ووزە کات شوێن و چۆنیەتیی کارلێککردن و پەیوەندیی نێوان ئەم پێکهاتانە دەکات لە هەموو قەبارە و ئاستەکاندا
+            </p>
+            <div id="moon-container"></div>
+        </div>
+    </section>
+   
+<hr>
+    <section id="sec-two" class="sec-third">
+        <div class="container">
+            <div class="box boxfirst">
+                <div class="box1">
+                    <p>سڵاو قوتابیان، لەم بەشەی وێبسایتەکەمدا دەمەوێت باسی یەکێک لە گەورەترین زاناکانی مێژوو بکەم کە
+کاریگەری گەورەی هەبووە لەسەر فیزیا ئەویش  <span>"ئەلبێرت ئەنشتاین"</span>
+‎
+‎​
+‎
+<span>‎ئەنشتاین</span> لە ١٤ی ئازاری <span class="year">١٨٧٩</span> لە شاری ئولم لە ئەڵمانیا لەدایک بووە. ئەو لە سەرەتادا کەسێکی ئاسایی
+بووە و تەنانەت لە نووسینگەی مۆڵەتنامەی داهێنان کاری کردووە، بەڵام بەهۆی هزری مەزنیەوە توانی لە
+ساڵی <span class="year">١٩٠٥</span>دا شۆڕشێک لە فیزیادا بەرپا بکات و لە ساڵی <span class="year">١٩٢١</span>یشدا خەڵاتی نۆبڵی وەرگرت.
+‎
+‎​سوود و کاریگەرییەکانی
+‎
+<span>‎ئەنشتاین</span> بە کارەکانی زۆر ئاسانکاری بۆ ژیانی ئەمڕۆمان کردووە بۆ نموونە سیستەمی جیپیس (GPS) کە
+لە تەلەفۆنەکانماندا بەکاری دەهێنین و زۆربەی تەکنەلۆجیاکانی سەردەم پشتبەستوون بە تیۆرییەکانی ئەو
+‎
+</p>
+                </div>
+            </div>
+            
+
+            <div class="box boxsecond">
+                <div class="box3">
+                    <div class="content3">
+                        <div class="content-main">
+                            <h1>
+                                دیارترین یاسای <span class="aneshatin">ئەنشتاین</span> هاوکێشەی یەکسانی وزە و بارستاییە، کە بەم شێوەیەیە:
+                            </h1>
+                        </div>
+                        <div class="content-hero">
+                            E = me²
+                            <br>
+E: energy <br>
+m: mass
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box4">
+                    <div class="image"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    
+
+    <footer class="footer">
+<div class="footer-box">
+    <div class="boxes">
+        <li>Teacher:</li>
+<li>Omed xalid mhamad</li>
+<li>Sara abdullkarim omer</li>
+
+    </div>
+    <div class="boxes">
+        <div class="img2"></div>
+      
+
+    </div>
+    <div class="boxes">
+        <li>Student:</li>
+         <li>Bedar sarbast kanabe</li>
+        <li>Mhamad zana wali</li>
+
+    </div>
+</div>
+
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    
+    <script>
+       
+        // ---------- 3D planet (section 2) ----------
+        const scene = new THREE.Scene();
+        const container = document.getElementById('moon-container');
+
+        const camera = new THREE.PerspectiveCamera(45, 1, 0.1, 1000);
+        camera.position.z = 5;
+
+        const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+        renderer.setSize(250, 250);
+        container.appendChild(renderer.domElement);
+
+        const geometry = new THREE.SphereGeometry(1.8, 64, 64);
+        const textureLoader = new THREE.TextureLoader();
+        textureLoader.setCrossOrigin('anonymous');
+
+        // CHANGED: Earth texture instead of the moon
+        const moonTexture = textureLoader.load('https://raw.githubusercontent.com/mrdoob/three.js/dev/examples/textures/planets/moon_1024.jpg');
+
+const material = new THREE.MeshStandardMaterial({
+    map: moonTexture,
+    roughness: 0.7,
+    metalness: 0.1
+});
+
+const moon = new THREE.Mesh(geometry, material);
+scene.add(moon);
+
+        const ambientLight = new THREE.AmbientLight(0xffffff, 0.4);
+        scene.add(ambientLight);
+
+        const directionalLight = new THREE.DirectionalLight(0xffffff, 1.5);
+        directionalLight.position.set(5, 3, 5);
+        scene.add(directionalLight);
+
+        function animate() {
+            requestAnimationFrame(animate);
+            moon.rotation.y += 0.003;
+            renderer.render(scene, camera);
+        }
+
+        animate();
+    </script>
+</body>
+
+</html>
